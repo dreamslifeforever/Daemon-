@@ -1,4 +1,4 @@
-# Daemon
+# Daeman
 
 **An in-browser runtime for autonomous AI agents.**
 

@@ -22,12 +22,12 @@ export default function AgentConsole() {
   // hydrate a preset chosen on the Roster page (localStorage handoff)
   useEffect(() => {
     try {
-      const raw = localStorage.getItem('daemon:selected');
+      const raw = localStorage.getItem('daeman:selected');
       if (raw) {
         const sel = JSON.parse(raw);
         if (sel.agentId && AGENT_BY_ID[sel.agentId]) setAgentId(sel.agentId);
         if (Array.isArray(sel.tools)) setEnabled(sel.tools);
-        localStorage.removeItem('daemon:selected');
+        localStorage.removeItem('daeman:selected');
       }
     } catch {}
   }, []);

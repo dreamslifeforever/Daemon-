@@ -16,14 +16,14 @@ export default function Roster() {
 
   useEffect(() => {
     try {
-      const raw = localStorage.getItem('daemon:custom');
+      const raw = localStorage.getItem('daeman:custom');
       if (raw) setCustom(JSON.parse(raw));
     } catch {}
   }, []);
 
   const persist = (next) => {
     setCustom(next);
-    try { localStorage.setItem('daemon:custom', JSON.stringify(next)); } catch {}
+    try { localStorage.setItem('daeman:custom', JSON.stringify(next)); } catch {}
   };
 
   const toggle = (id) =>
@@ -51,9 +51,9 @@ export default function Roster() {
 
   const deploy = (a) => {
     try {
-      localStorage.setItem('daemon:selected', JSON.stringify({ agentId: a.id, tools: a.tools }));
+      localStorage.setItem('daeman:selected', JSON.stringify({ agentId: a.id, tools: a.tools }));
       // custom agents aren't in the engine registry; fall back to a base agent id
-      if (a.custom) localStorage.setItem('daemon:selected', JSON.stringify({ agentId: 'atlas', tools: a.tools }));
+      if (a.custom) localStorage.setItem('daeman:selected', JSON.stringify({ agentId: 'atlas', tools: a.tools }));
     } catch {}
     router.push('/');
   };

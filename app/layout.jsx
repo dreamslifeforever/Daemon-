@@ -3,12 +3,12 @@ import TabNav from '@/components/TabNav';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Daemon — an in-browser runtime for autonomous AI agents',
+  title: 'Daeman — an in-browser runtime for autonomous AI agents',
   description:
     'Spin up an AI agent, give it a goal, and watch it think, call tools, and work — step by step, live in your browser. No keys, nothing leaves your tab.',
-  metadataBase: new URL('https://daemon.fun'),
+  metadataBase: new URL('https://daeman.fun'),
   openGraph: {
-    title: 'Daemon — run AI agents in your browser',
+    title: 'Daeman — run AI agents in your browser',
     description: 'Give an agent a goal. Watch it work. A live agent runtime, on Solana.',
     type: 'website',
   },

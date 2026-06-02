@@ -1,7 +1,7 @@
 import Swarm from '@/components/Swarm';
 
 export const metadata = {
-  title: 'Swarm — Daemon',
+  title: 'Swarm — Daeman',
   description: 'Hand one goal to many agents. Watch the swarm split it up and work in parallel.',
 };
 

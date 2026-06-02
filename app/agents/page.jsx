@@ -1,7 +1,7 @@
 import Roster from '@/components/Roster';
 
 export const metadata = {
-  title: 'Roster — Daemon',
+  title: 'Roster — Daeman',
   description: 'Browse preset agents or assemble your own, then deploy it straight into the runner.',
 };
 
